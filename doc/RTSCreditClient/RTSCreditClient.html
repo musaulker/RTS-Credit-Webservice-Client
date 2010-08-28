@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class RTSCreditClient</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class RTSCreditClient</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">RTS Credit Webservice Client - PHP 5 class for RTSCredit.com Broker Webservice</p>
+<p class="description"><p>PHP Version 5</p><p>Required Extensions  Soap  SimpleXML</p><p>The MIT License</p><p>Copyright (c) 2010 Musa Ulker</p><p>Permission is hereby granted, free of charge, to any person obtaining a copy  of this software and associated documentation files (the &quot;Software&quot;), to deal  in the Software without restriction, including without limitation the rights  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  copies of the Software, and to permit persons to whom the Software is  furnished to do so, subject to the following conditions:</p><p>The above copyright notice and this permission notice shall be included in  all copies or substantial portions of the Software.</p><p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN  THE SOFTWARE.</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Musa Ulker &lt;<a href="mailto:musaulker@gmail.com">musaulker@gmail.com</a>&gt;</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">copyright:</span> Musa Ulker 2010</li>
+				<li><span class="field">link:</span> <a href="http://github.com/musaulker/RTS-Credit-Webservice-Client">http://github.com/musaulker/RTS-Credit-Webservice-Client</a></li>
+				<li><span class="field">license:</span> MIT</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_RTSCreditClient.php.html">/RTSCreditClient.php</a> (line <span class="field"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a42">42</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">RTSCreditClient</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#__destruct" title="details" class="method-name">__destruct</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#BrokerSearch" title="details" class="method-name">BrokerSearch</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$MCNumber</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$city</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$state</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$zip</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#BrokerSearchByCityState" title="details" class="method-name">BrokerSearchByCityState</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$city</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$state</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#BrokerSearchByMC" title="details" class="method-name">BrokerSearchByMC</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$MCNumber</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#BrokerSearchByName" title="details" class="method-name">BrokerSearchByName</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#BrokerSearchByZip" title="details" class="method-name">BrokerSearchByZip</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$zip</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#getAvailableSearches" title="details" class="method-name">getAvailableSearches</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#GetBrokerDetail" title="details" class="method-name">GetBrokerDetail</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#getLastRequest" title="details" class="method-name">getLastRequest</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getLastRequetHeaders" title="details" class="method-name">getLastRequetHeaders</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#getLastResponse" title="details" class="method-name">getLastResponse</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getLastResponseHeaders" title="details" class="method-name">getLastResponseHeaders</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getLatestDescription" title="details" class="method-name">getLatestDescription</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getLatestReturnCode" title="details" class="method-name">getLatestReturnCode</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#getUserIsValid" title="details" class="method-name">getUserIsValid</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getUserType" title="details" class="method-name">getUserType</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#login" title="details" class="method-name">login</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setProxy" title="details" class="method-name">setProxy</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$host</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$port</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$login</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setUserID" title="details" class="method-name">setUserID</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$userID</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setUserPass" title="details" class="method-name">setUserPass</a>
+											(<span class="var-type">$userPass</span>&nbsp;<span class="var-name">$userPass</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a63">63</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Class constructor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">RTSCreditClient</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method__destruct" id="__destruct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Destructor __destruct</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a86">86</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Class destructor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__destruct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodBrokerSearch" id="BrokerSearch"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">BrokerSearch</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a179">179</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Use this method for a broad search of the RTS Credit database. With the exception of the session token, all or some of the parameters may be passed.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array of brokers on success if more then one broker found, broker if only one broker found, boolean false on failure</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			BrokerSearch
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$MCNumber</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$city</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$state</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$zip</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$MCNumber</span><span class="var-description">: Optional. 6 digit Motor Carrier Number, &quot;Shipper&quot;,&quot;F/F&quot;, or &quot;EXEMPT&quot;</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Optional. Full or partial name of broker</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$city</span><span class="var-description">: Optional. Full or partial city name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$state</span><span class="var-description">: Optional. Any two character state abbreviation</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$zip</span><span class="var-description">: Optional. Any valid US zip code</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodBrokerSearchByCityState" id="BrokerSearchByCityState"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">BrokerSearchByCityState</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a216">216</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Use this method for a search of the RTS Credit database by city and/or state.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array of brokers on success if more then one broker found, broker if only one broker found, boolean false on failure</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			BrokerSearchByCityState
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$city</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$state</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$city</span><span class="var-description">: Optional. Full or partial city name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$state</span><span class="var-description">: Optional. Any two character state abbreviation</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodBrokerSearchByMC" id="BrokerSearchByMC"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">BrokerSearchByMC</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a252">252</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Use this method for a search of the RTS Credit database by MC Number.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array of brokers on success if more then one broker found, broker if only one broker found, boolean false on failure</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			BrokerSearchByMC
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$MCNumber</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$MCNumber</span><span class="var-description">: Optional. 6 digit Motor Carrier Number, &quot;Shipper&quot;,&quot;F/F&quot;, or &quot;EXEMPT&quot;</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodBrokerSearchByName" id="BrokerSearchByName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">BrokerSearchByName</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a288">288</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Use this method for a search of the RTS Credit database by broker name.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array of brokers on success if more then one broker found, broker if only one broker found, boolean false on failure</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			BrokerSearchByName
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Optional. Full or partial name of broker</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodBrokerSearchByZip" id="BrokerSearchByZip"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">BrokerSearchByZip</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a324">324</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Use this method for a search of the RTS Credit database by zipcode.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array of brokers on success if more then one broker found, broker if only one broker found, boolean false on failure</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			BrokerSearchByZip
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$zip</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$zip</span><span class="var-description">: Optional. Any valid US zip code</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAvailableSearches" id="getAvailableSearches"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAvailableSearches</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a427">427</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns user accounts available search</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			getAvailableSearches
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodGetBrokerDetail" id="GetBrokerDetail"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetBrokerDetail</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a360">360</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Use this method to obtain a full credit report from the RTS CRedit database.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array of brokers on success if more then one broker found, broker if only one broker found, boolean false on failure</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			GetBrokerDetail
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id</span><span class="var-description">: Required. The value of the ID node returned from any of the search methods</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetLastRequest" id="getLastRequest"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getLastRequest</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a483">483</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the XML sent in the last SOAP request.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> XML string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			getLastRequest
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetLastRequetHeaders" id="getLastRequetHeaders"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getLastRequetHeaders</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a471">471</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the SOAP headers from the last request.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getLastRequetHeaders
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetLastResponse" id="getLastResponse"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getLastResponse</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a507">507</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the XML sent in the last SOAP response.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> XML string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			getLastResponse
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetLastResponseHeaders" id="getLastResponseHeaders"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getLastResponseHeaders</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a495">495</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the SOAP headers from the last response.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getLastResponseHeaders
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetLatestDescription" id="getLatestDescription"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getLatestDescription</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a460">460</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get latest description from webservice call</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getLatestDescription
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetLatestReturnCode" id="getLatestReturnCode"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getLatestReturnCode</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a449">449</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get latest return code from webservice call</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getLatestReturnCode
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetUserIsValid" id="getUserIsValid"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUserIsValid</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a438">438</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns user account is valid or not</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			getUserIsValid
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetUserType" id="getUserType"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUserType</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a416">416</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns user type</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getUserType
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodlogin" id="login"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">login</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a139">139</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Method to login to the RTS Credit Web Service and receive a session token.</p>
+<p class="description"><p>This token must be used when calling any other methods in this service and will expire in 24 hours.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true on success, false on failure</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			login
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetProxy" id="setProxy"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setProxy</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a99">99</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the webservice proxy</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setProxy
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$host</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$port</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$login</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$host</span><span class="var-description">: Proxy hostname or ip</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$port</span><span class="var-description">: Proxy port number</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$login</span><span class="var-description">: Proxy username</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$password</span><span class="var-description">: Proxy user password</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetUserID" id="setUserID"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setUserID</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a116">116</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">set user ID for the webservice login</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setUserID
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$userID</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$userID</span><span class="var-description">: userID for webservice login</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetUserPass" id="setUserPass"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setUserPass</span> (line <span class="line-number"><a href="../__filesource/fsource_RTSCreditClient__RTSCreditClient.php.html#a127">127</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">set user password for the webservice login</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setUserPass
+		</span>
+					(<span class="var-type">$userPass</span>&nbsp;<span class="var-name">$userPass</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$userPass</span>
+				<span class="var-name">$userPass</span><span class="var-description">: user password for the webservice login</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 28 Aug 2010 07:13:55 +0300 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>
